@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Storytelling from "@/components/Storytelling";
 import DidYouKnow from "@/components/DidYouKnow";
 import Newsletter from "@/components/Newsletter";
+import { AdBanner, AdStrip, NativeBanner, ResponsiveBanner, SponsoredLink } from "@/components/Ads";
 import { CategoryCard, StoryCard, VideoCard } from "@/components/cards";
 import {
   Container,
@@ -22,11 +23,23 @@ export default function Home() {
       <Hero />
       <Intro />
       <ExploreCategories />
+      <AdStrip tone="cream-100">
+        <ResponsiveBanner />
+      </AdStrip>
       <FeaturedStory featuredImage={IMAGES.featuredCattle} storyId={featured.id} />
       <LatestStories stories={latest} />
+      <AdStrip>
+        <NativeBanner />
+      </AdStrip>
       <VideoShowcase />
       <Storytelling />
       <DidYouKnow />
+      <AdStrip>
+        <div className="flex flex-col items-center gap-6 md:flex-row md:items-center md:gap-10">
+          <AdBanner size="300x250" />
+          <SponsoredLink className="w-full max-w-md" />
+        </div>
+      </AdStrip>
       <AboutStrip />
       <Newsletter />
     </>

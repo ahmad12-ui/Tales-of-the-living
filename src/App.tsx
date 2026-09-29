@@ -6,6 +6,7 @@ import Explore from "@/pages/Explore";
 import Stories from "@/pages/Stories";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import { AdSideRails, AdStrip, ResponsiveBanner } from "@/components/Ads";
 import { useRoute, useScrollReveal, type RoutePath } from "@/lib/router";
 
 const TITLES: Record<RoutePath, string> = {
@@ -29,6 +30,7 @@ export default function App() {
   return (
     <div className="flex min-h-screen flex-col overflow-x-clip bg-cream-50">
       <Navbar route={path} overlay={path === "/"} />
+      <AdSideRails routeKey={path} />
 
       <main id="main" className="flex-1">
         {path === "/" && <Home />}
@@ -37,6 +39,11 @@ export default function App() {
         {path === "/about" && <About />}
         {path === "/contact" && <Contact />}
       </main>
+
+      {/* Har page ke end par responsive banner (728x90 / 468x60 / 320x50) */}
+      <AdStrip>
+        <ResponsiveBanner key={path} />
+      </AdStrip>
 
       <Footer />
     </div>

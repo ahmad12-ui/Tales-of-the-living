@@ -4,6 +4,7 @@ import { Container, Eyebrow, Reveal, SectionHeading } from "@/components/ui";
 import { socialIconMap } from "@/components/SocialIcons";
 import Storytelling from "@/components/Storytelling";
 import Newsletter from "@/components/Newsletter";
+import { AdBanner, AdStrip } from "@/components/Ads";
 
 const pillars = [
   {
@@ -295,6 +296,10 @@ export default function About() {
           </div>
         </Container>
       </section>
+
+      <AdStrip tone="cream-100">
+        <AdBanner size="300x250" />
+      </AdStrip>
 
       <Newsletter />
     </>

@@ -6,6 +6,7 @@ import { Container, DemoBadge, Eyebrow, Reveal } from "@/components/ui";
 import SearchFilter, { type FilterId, type SortKey } from "@/components/SearchFilter";
 import { ContentCard, VideoCard } from "@/components/cards";
 import Newsletter from "@/components/Newsletter";
+import { AdBanner, AdStrip, NativeBanner, ResponsiveBanner } from "@/components/Ads";
 
 type MediaType = "all" | "story" | "video";
 
@@ -166,6 +167,10 @@ export default function Explore({ query: params }: { query: URLSearchParams }) {
         </section>
       )}
 
+      <AdStrip tone="cream-100">
+        <ResponsiveBanner />
+      </AdStrip>
+
       {/* Results grid */}
       <section className="bg-cream-100 pt-14 pb-20 sm:pt-16 sm:pb-28" aria-label="Results">
         <Container>
@@ -241,6 +246,11 @@ export default function Explore({ query: params }: { query: URLSearchParams }) {
           </Reveal>
         </Container>
       </section>
+
+      <AdStrip>
+        <NativeBanner />
+        <AdBanner size="300x250" />
+      </AdStrip>
 
       <Newsletter />
     </>

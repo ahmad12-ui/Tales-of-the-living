@@ -11,6 +11,7 @@ import {
 import { Container, DemoBadge, Eyebrow, Reveal, SectionHeading } from "@/components/ui";
 import { StoryCard } from "@/components/cards";
 import Newsletter from "@/components/Newsletter";
+import { AdStrip, NativeBanner, ResponsiveBanner, SponsoredLink } from "@/components/Ads";
 import type { FilterId } from "@/components/SearchFilter";
 
 export default function Stories({ query: params }: { query: URLSearchParams }) {
@@ -189,6 +190,10 @@ export default function Stories({ query: params }: { query: URLSearchParams }) {
         </Container>
       </section>
 
+      <AdStrip tone="cream-100">
+        <ResponsiveBanner />
+      </AdStrip>
+
       {/* Latest grid */}
       <section className="bg-cream-100 py-16 sm:py-20 lg:py-24" aria-labelledby="latest-archive">
         <Container>
@@ -217,6 +222,11 @@ export default function Stories({ query: params }: { query: URLSearchParams }) {
           )}
         </Container>
       </section>
+
+      <AdStrip>
+        <NativeBanner />
+        <SponsoredLink className="w-full max-w-md" />
+      </AdStrip>
 
       {/* Popular */}
       <section className="relative overflow-hidden bg-forest-950 py-16 sm:py-20 lg:py-24" aria-labelledby="popular-title">
