@@ -6,7 +6,7 @@ import Explore from "@/pages/Explore";
 import Stories from "@/pages/Stories";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
-import { AdSideRails, AdStrip, ResponsiveBanner } from "@/components/Ads.tsx";
+import { AdSideRails, AdStrip, ResponsiveBanner } from './components/Ads.tsx';
 import { useRoute, useScrollReveal, type RoutePath } from "@/lib/router";
 
 const TITLES: Record<RoutePath, string> = {
