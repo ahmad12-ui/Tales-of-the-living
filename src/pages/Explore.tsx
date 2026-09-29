@@ -6,7 +6,7 @@ import { Container, DemoBadge, Eyebrow, Reveal } from "@/components/ui";
 import SearchFilter, { type FilterId, type SortKey } from "@/components/SearchFilter";
 import { ContentCard, VideoCard } from "@/components/cards";
 import Newsletter from "@/components/Newsletter";
-import { AdBanner, AdStrip, NativeBanner, ResponsiveBanner } from "@/components/Ads";
+import { AdBanner, AdStrip, NativeBanner, ResponsiveBanner } from "@/components/Ads.tsx";
 
 type MediaType = "all" | "story" | "video";
 

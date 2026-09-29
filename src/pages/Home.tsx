@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Storytelling from "@/components/Storytelling";
 import DidYouKnow from "@/components/DidYouKnow";
 import Newsletter from "@/components/Newsletter";
-import { AdBanner, AdStrip, NativeBanner, ResponsiveBanner, SponsoredLink } from "@/components/Ads";
+import { AdBanner, AdStrip, NativeBanner, ResponsiveBanner, SponsoredLink } from "@/components/Ads.tsx";
 import { CategoryCard, StoryCard, VideoCard } from "@/components/cards";
 import {
   Container,

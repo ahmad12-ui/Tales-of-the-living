@@ -11,7 +11,7 @@ import {
 import { Container, DemoBadge, Eyebrow, Reveal, SectionHeading } from "@/components/ui";
 import { StoryCard } from "@/components/cards";
 import Newsletter from "@/components/Newsletter";
-import { AdStrip, NativeBanner, ResponsiveBanner, SponsoredLink } from "@/components/Ads";
+import { AdStrip, NativeBanner, ResponsiveBanner, SponsoredLink } from "@/components/Ads.tsx";
 import type { FilterId } from "@/components/SearchFilter";
 
 export default function Stories({ query: params }: { query: URLSearchParams }) {

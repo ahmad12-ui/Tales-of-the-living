@@ -4,7 +4,7 @@ import { Container, Eyebrow, Reveal, SectionHeading } from "@/components/ui";
 import { socialIconMap } from "@/components/SocialIcons";
 import Storytelling from "@/components/Storytelling";
 import Newsletter from "@/components/Newsletter";
-import { AdBanner, AdStrip } from "@/components/Ads";
+import { AdBanner, AdStrip } from "@/components/Ads.tsx";
 
 const pillars = [
   {
