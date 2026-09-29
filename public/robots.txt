@@ -1,0 +1,6 @@
+# robots.txt — Tales of the Living
+User-agent: *
+Allow: /
+
+# Sitemap (apna asli domain yahan likhein)
+Sitemap: https://YOURDOMAIN.com/sitemap.xml
